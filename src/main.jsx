@@ -1,11 +1,10 @@
-gimport React from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import './index.css'
 import Dashboard from './pages/Dashboard.jsx';
 import Users from './pages/Users.jsx';
 import Products from './pages/Products.jsx';
@@ -38,7 +37,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/reviews",
-        element:<Reviews /> ,
+        element: <Reviews />,
       },
 
 
