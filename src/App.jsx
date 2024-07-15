@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { Outlet } from 'react-router-dom'
+import Sidebar from './components/Sidebar'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,8 +11,13 @@ function App() {
   return (
     <>
       <Navbar />
-      <div>
-        <Outlet />
+      <div className='flex'>
+        <div className='w-1/4'>
+          <Sidebar />
+        </div>
+        <div className='w-3/4'>
+          <Outlet />
+        </div>
       </div>
     </>
   )
