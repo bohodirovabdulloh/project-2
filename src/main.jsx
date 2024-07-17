@@ -11,12 +11,17 @@ import Users from './pages/Users.jsx';
 import Products from './pages/Products.jsx';
 import Employes from './pages/Employes.jsx';
 import Reviews from './pages/Reviews.jsx';
+import Home from './pages/Home.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
+      {
+        path: "/",
+        element: <Home />
+      },
       {
         path: "dashboard",
         element: <Dashboard />,
@@ -38,12 +43,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/reviews",
-        element:<Reviews /> ,
+        element: <Reviews />,
       },
-
-
-
-
     ]
   },
 ]);

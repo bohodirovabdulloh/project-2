@@ -13,10 +13,10 @@ function App() {
     <>
       <Navbar />
       <div className='flex'>
-        <div className='w-1/4'>
+        <div className='w-1/6'>
           <Sidebar />
         </div>
-        <div className='w-3/4'>
+        <div className='w-5/6'>
           <Outlet />
         </div>
       </div>
