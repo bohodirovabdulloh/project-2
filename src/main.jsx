@@ -10,7 +10,7 @@ import Users from './pages/Users.jsx';
 import Products from './pages/Products.jsx';
 import Employes from './pages/Employes.jsx';
 import Reviews from './pages/Reviews.jsx';
-
+import './index.css'
 const router = createBrowserRouter([
   {
     path: "/",
